@@ -1,0 +1,23 @@
+{
+  "name": "sass-assigment",
+  "version": "1.0.0",
+  "description": "Sass assigment in moduel 3 ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kristbjorgosk/Sass-assigment.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "kristbjörg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kristbjorgosk/Sass-assigment/issues"
+  },
+  "homepage": "https://github.com/Kristbjorgosk/Sass-assigment#readme"
+}
