@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+/* variables for the font family and margin */
+/* all the styles that is both in header and footer */
+/* variable used for the font family and media inside the body element */
+body {
+  font-family: "David Libre", serif;
+  padding: 2rem;
+  width: 70%;
+  color: #4f4f4f;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 50%;
+  }
+}
+
+/* @include function with all the styles in the @mixin 
+and a hover inside the p element */
+header {
+  margin-bottom: 2rem;
+  background-color: rosybrown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3% 3% 3% 3%;
+  font-size: 24px;
+  -webkit-box-shadow: 0px 4px 8px #e6c9c9;
+          box-shadow: 0px 4px 8px #e6c9c9;
+}
+
+header p:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+/* variable used for the margin */
+h1 {
+  margin: 0 5% 0 5%;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+/* variable used for the margin */
+li {
+  margin: 0 5% 0 5%;
+  line-height: 2rem;
+}
+
+/* @include function with all the styles in the @mixin 
+and I over wrote the font size here */
+footer {
+  margin-top: 2rem;
+  background-color: rosybrown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3% 3% 3% 3%;
+  font-size: 24px;
+  -webkit-box-shadow: 0px 4px 8px #e6c9c9;
+          box-shadow: 0px 4px 8px #e6c9c9;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

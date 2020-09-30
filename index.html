@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Rajdhani&display=swap" rel="stylesheet"> 
     <title>Sass-assigment</title>
 </head>
-
 <body>
   
+    <header>
+        <p>Sass assigment </p>
+        Vefþróun
+    </header>
+
     <h1>
-      Sass assigment
+        Here are 5 aspects/tools of Sass I used in this assigment
     </h1>
     
-    <header>
-      Here are 5 aspects/tools of Sass I found useful
-    </header>
-    
     <main>
-      <ul>
-        <li> I used $ to groups comon css together</li>
-        <li> I can put my baby element in the same bracket braces as the parent</li>
-      </ul>
+      <ol>
+        <li>I used <b>$</b> to group css styles together</li>
+        <li>I nested the child element <b>p</b> with the parent element <b>header</b> in sass</li>
+        <li>inside the <b>p</b> element I did <b>&:hover</b> to do underline under "Sass assigment" in the header</li>
+        <li>I used <b>@mixin</b> for header and footer so they would have all the same styling, and then <b>@include</b> in each of them. I over wrote the font size in footer</li>
+        <li>I did a <b>@media</b> inside the header element</li>
+      </ol>
     </main>
     
     <footer>
-      <div>
+      <p>
         September 2020
-      </div>
-       <div>
+      </p>
+       <p>
         Reykjavík, Iceland
-      </div>
+       </p>
     </footer>
     
   </body>

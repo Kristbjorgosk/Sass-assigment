@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+ /* variables for the font family and margin */
+$textstyle: 'David Libre', serif;
+$textmargin: 0 5% 0 5%;
+
+/* all the styles that is both in header and footer */
+@mixin header-footer {
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 3% 3% 3% 3%;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgb(230, 201, 201);
+}
+
+/* variable used for the font family and media inside the body element */
+body {
+    font-family: $textstyle;
+    padding: 2rem;
+    width: 70%;
+    color: rgb(79, 79, 79);
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+/* @include function with all the styles in the @mixin 
+and a hover inside the p element */
+header {
+    margin-bottom: 2rem;
+   @include header-footer();
+    p {
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+}
+
+/* variable used for the margin */
+h1 {
+    margin: $textmargin;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+/* variable used for the margin */
+li {
+    margin: $textmargin;
+    line-height: 2rem;
+}
+
+/* @include function with all the styles in the @mixin 
+and I over wrote the font size here */
+footer{
+    margin-top: 2rem;
+    @include header-footer();
+    font-size: 1rem;
+}
